@@ -8,5 +8,8 @@
   "devDependencies": {
     "nitro": "latest",
     "vite": "beta"
+  },
+  "dependencies": {
+    "resend": "^6.9.1"
   }
 }
