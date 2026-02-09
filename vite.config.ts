@@ -4,7 +4,12 @@ import { nitro } from "nitro/vite";
 export default defineConfig({
   plugins: [
     nitro({
-      serverDir: "./server"
+      serverDir: "./server",
+      preset: "cloudflare_module",
+      cloudflare: {
+        deployConfig: true,
+        nodeCompat: true
+      }
     }),
   ],
   resolve: {
